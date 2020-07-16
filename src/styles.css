@@ -37,17 +37,18 @@ html {
 .container {
   width: 600px;
   height: 800px;
-  background-color: white;
+  background-color: #f1d592;
 
   padding: 32px;
 }
 
 .frame {
-  border: 1px solid #484848;
+  border: 1.25px dotted #002c6d;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border-bottom: unset;
 }
 
 .header {
@@ -67,7 +68,7 @@ html {
 
 .btn-header {
   font-size: 1.8rem;
-  font-family: "Fredericka the Great";
+  font-family: "Pangolin";
 
   padding: 16px;
 
@@ -92,18 +93,18 @@ html {
   border: unset;
   padding: 0 64px;
   flex: 1;
-  border-bottom: solid 1px #a7a7a7;
+  border-bottom: solid 1px #5374a5;
   outline: unset;
-  font-family: "Balsamiq Sans";
+  font-family: "Homemade Apple";
   font-size: 16px;
   text-transform: lowercase;
-  color: #6b6b6b;
+  color: #3b3b3b;
 }
 
 .add-btn {
   font-size: 1.8rem;
-  font-family: "Fredericka the Great";
-  color: #f08080;
+  font-family: "Pangolin";
+  color: #e71700;
   padding: 16px;
   padding-right: unset;
   cursor: pointer;
@@ -125,10 +126,10 @@ html {
 
   min-height: 34px;
   margin: 16px 0 0;
-  font-family: "Balsamiq Sans";
+  font-family: "Homemade Apple";
   font-size: 24px;
-  border-bottom: 1px solid #88888893;
-  color: #6b6b6b;
+  border-bottom: 1px solid #5374a5;
+  color: #3b3b3b;
 }
 
 .todo-text {
