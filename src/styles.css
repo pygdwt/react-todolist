@@ -2,8 +2,8 @@
   box-sizing: border-box;
 }
 :root {
-  --clear-color: #fa8072;
-  --add-color: #fa8072;
+  --clear-color: #e71700;
+  --add-color: #e71700;
 }
 .clear-color {
   color: var(--clear-color);
@@ -37,7 +37,7 @@ html {
 .container {
   width: 600px;
   height: 800px;
-  background-color: #000000;
+  background-color: white;
 
   padding: 32px;
 }
@@ -62,7 +62,7 @@ html {
   font-family: "Fredericka the Great";
   font-size: 3.6rem;
   text-transform: lowercase;
-  color: #dcdcdc;
+  color: #0062d1;
 }
 
 .btn-header {
@@ -92,12 +92,12 @@ html {
   border: unset;
   padding: 0 64px;
   flex: 1;
-  border-bottom: solid 1px #dcdcdc;
+  border-bottom: solid 1px #a7a7a7;
   outline: unset;
   font-family: "Balsamiq Sans";
   font-size: 16px;
   text-transform: lowercase;
-  color: #d3d3d3;
+  color: #6b6b6b;
 }
 
 .add-btn {
@@ -125,10 +125,10 @@ html {
 
   min-height: 34px;
   margin: 16px 0 0;
-  font-family: "Fredericka the Great";
+  font-family: "Balsamiq Sans";
   font-size: 24px;
-  border-bottom: 1px solid #dcdcdc;
-  color: #d3d3d3;
+  border-bottom: 1px solid #88888893;
+  color: #6b6b6b;
 }
 
 .todo-text {
