@@ -1,4 +1,138 @@
-.App {
-  font-family: sans-serif;
+* {
+  box-sizing: border-box;
+}
+:root {
+  --clear-color: #fa8072;
+  --add-color: #fa8072;
+}
+.clear-color {
+  color: var(--clear-color);
+}
+.add-color {
+  color: var(--add-color);
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
+  background-color: #2d2d2d;
+  height: 100vh;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.container {
+  width: 600px;
+  height: 800px;
+  background-color: #000000;
+
+  padding: 32px;
+}
+
+.frame {
+  border: 1px solid #484848;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+}
+
+.judul-header {
+  flex: 1;
   text-align: center;
+
+  font-family: "Fredericka the Great";
+  font-size: 3.6rem;
+  text-transform: lowercase;
+  color: #dcdcdc;
+}
+
+.btn-header {
+  font-size: 1.8rem;
+  font-family: "Fredericka the Great";
+
+  padding: 16px;
+
+  background: unset;
+  border: unset;
+  outline: unset;
+
+  cursor: pointer;
+}
+
+.add {
+  padding: 16px;
+}
+
+.add-form {
+  display: flex;
+  align-items: flex-start;
+}
+
+.add-input {
+  background: unset;
+  border: unset;
+  padding: 0 64px;
+  flex: 1;
+  border-bottom: solid 1px #dcdcdc;
+  outline: unset;
+  font-family: "Balsamiq Sans";
+  font-size: 16px;
+  text-transform: lowercase;
+  color: #d3d3d3;
+}
+
+.add-btn {
+  font-size: 1.8rem;
+  font-family: "Fredericka the Great";
+  color: #f08080;
+  padding: 16px;
+  padding-right: unset;
+  cursor: pointer;
+  border: unset;
+  background: unset;
+  outline: unset;
+}
+
+.todos {
+  display: flex;
+  flex-direction: column;
+}
+
+.todo {
+  position: relative;
+
+  flex: 1 0 auto;
+  text-align: center;
+
+  min-height: 34px;
+  margin: 16px 0 0;
+  font-family: "Fredericka the Great";
+  font-size: 24px;
+  border-bottom: 1px solid #dcdcdc;
+  color: #d3d3d3;
+}
+
+.todo-text {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
 }
