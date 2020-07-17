@@ -12,6 +12,12 @@ const TodoForm = ({ addTodo, showAdd }) => {
       return;
     }
 
+    if (value.length > 50) {
+      alert("sorry, maximum input is 50");
+      setValue("");
+      return;
+    }
+
     addTodo(value);
     setValue("");
   };
