@@ -8,23 +8,28 @@ import Todos from "../components/Todos";
 const TodoList = () => {
   const [todos, setTodos] = useState([
     {
-      text: "Assalamualaikum"
+      text: "Astagfirullah"
     },
     {
-      text: "Warahmatullahi"
+      text: "hal adzim"
     },
     {
       text: "Wabarakato"
     }
   ]);
+
+  const [showAdd, setShowAdd] = useState(false);
+
   const addTodo = value => {
     const addedTodo = [...todos, { text: value }];
     setTodos(addedTodo);
   };
 
+  const showAddToggle = () => setShowAdd(!showAdd);
+
   return (
     <Paper>
-      <Header />
+      <Header showAddToggle={showAddToggle} />
       <TodoForm addTodo={addTodo} />
       <Todos todos={todos} />
     </Paper>
