@@ -5,20 +5,6 @@
   --clear-color: #e71700;
   --add-color: #e71700;
 }
-.clear-color {
-  color: var(--clear-color);
-}
-.add-color {
-  color: var(--add-color);
-}
-
-.align-left {
-  text-align: left;
-}
-
-.align-right {
-  text-align: right;
-}
 
 html {
   font-size: 10px;
@@ -72,20 +58,6 @@ html {
   font-size: 3.6rem;
   text-transform: lowercase;
   color: #0062d1;
-}
-
-.btn-header {
-  width: 24%;
-  font-size: 1.8rem;
-  font-family: "Pangolin";
-
-  padding: 16px;
-
-  background: unset;
-  border: unset;
-  outline: unset;
-
-  cursor: pointer;
 }
 
 .add {
