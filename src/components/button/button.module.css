@@ -1,0 +1,28 @@
+.clearColor {
+  color: var(--clear-color);
+}
+.addColor {
+  color: var(--add-color);
+}
+
+.alignLeft {
+  text-align: left;
+}
+
+.alignRight {
+  text-align: right;
+}
+
+.btnHeader {
+  width: 24%;
+  font-size: 1.8rem;
+  font-family: "Pangolin";
+
+  padding: 16px;
+
+  background: unset;
+  border: unset;
+  outline: unset;
+
+  cursor: pointer;
+}

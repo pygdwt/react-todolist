@@ -28,22 +28,6 @@ html {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.container {
-  width: 600px;
-  height: 800px;
-  background-color: #f1d592;
-
-  padding: 32px;
-}
-
-.frame {
-  border: 1.2px dashed #5374a5;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 .add {
   padding: 16px;
 }
@@ -85,7 +69,7 @@ html {
   min-height: 500px;
 }
 
-.todo {
+/* .todo {
   position: relative;
 
   flex: 1 0 auto;
@@ -97,7 +81,7 @@ html {
   font-size: 14px;
   border-bottom: 1px solid #5374a5;
   color: #3b3b3b;
-}
+} */
 
 .todo-text {
   width: 100%;
