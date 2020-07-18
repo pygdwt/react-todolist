@@ -44,22 +44,6 @@ html {
   justify-content: space-between;
 }
 
-.header {
-  display: flex;
-  align-items: flex-start;
-}
-
-.judul-header {
-  /* flex: 1; */
-  width: 52%;
-  text-align: center;
-
-  font-family: "Fredericka the Great";
-  font-size: 3.6rem;
-  text-transform: lowercase;
-  color: #0062d1;
-}
-
 .add {
   padding: 16px;
 }
