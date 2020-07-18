@@ -1,0 +1,42 @@
+.todos {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 500px;
+}
+
+/* .todo {
+  position: relative;
+
+  flex: 1 0 auto;
+  text-align: center;
+
+  max-height: 34px;
+  margin: 16px 0 0;
+  font-family: "Homemade Apple";
+  font-size: 14px;
+  border-bottom: 1px solid #5374a5;
+  color: #3b3b3b;
+} */
+
+.todoText {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.todoPlaceholderText {
+  font-family: "Pangolin";
+  font-size: 18px;
+  text-align: center;
+  padding: 16px;
+  color: #3b3b3b;
+}
+
+.addButtonPlaceholderText {
+  font-family: "Pangolin";
+  font-size: 16px;
+  color: #e71700;
+}
