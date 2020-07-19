@@ -8,7 +8,7 @@ export const header = () =>
 
 export const judulHeader = () =>
   css`
-    width: 52%;
+    /* width: 52%; */
     text-align: center;
 
     font-family: "Fredericka the Great";
