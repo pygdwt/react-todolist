@@ -1,11 +1,15 @@
-import React from "react";
+/** @jsx jsx */
+import { jsx } from "@emotion/core";
+//import React from "react";
 import PropTypes from "prop-types";
-import styles from "./todos.module.css";
+//import styles from "./todos.module.css";
+
+import * as styles from "./todos.styles";
 
 import Todo from "../todo/Todo";
 const Todos = ({ todos, completeTodo }) => {
   return (
-    <section className={styles.todos}>
+    <section css={styles.todos}>
       {todos.length > 0 &&
         todos.map((todo, index) => {
           return (
@@ -19,9 +23,9 @@ const Todos = ({ todos, completeTodo }) => {
           );
         })}
       {todos.length === 0 && (
-        <div className={styles.todoPlaceholderText}>
+        <div css={styles.todoPlaceholderText}>
           Silahkan Menambah Todo List dengan mengklik tombol{" "}
-          <span className={styles.addButtonPlaceholderText}>Add</span>
+          <span css={styles.addButtonPlaceholderText}>Add</span>
         </div>
       )}
     </section>
