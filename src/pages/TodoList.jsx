@@ -1,22 +1,24 @@
 import React, { useState } from "react";
 
-import Paper from "../components/Paper";
-import Header from "../components/Header";
-import TodoForm from "../components/TodoForm";
-import Todos from "../components/Todos";
+import Paper from "../components/paper/Paper";
+import Header from "../components/header/HeaderNoJSX";
+import TodoForm from "../components/todoform/TodoForm";
+import Todos from "../components/todos/Todos";
+
+import Container from "./../layout/Container";
 
 const TodoList = () => {
   const [todos, setTodos] = useState([
     {
-      text: "Astagfirullah",
+      text: "Alhamdulillah",
       isCompleted: false
     },
     {
-      text: "hal adzim",
+      text: "hirabbil",
       isCompleted: false
     },
     {
-      text: "Wabarakato",
+      text: "aaLaamiin",
       isCompleted: false
     }
   ]);
@@ -44,13 +46,19 @@ const TodoList = () => {
 
   return (
     <Paper>
-      <Header
-        showAddToggle={showAddToggle}
-        showAdd={showAdd}
-        clearTodos={clearTodos}
-      />
-      <TodoForm addTodo={addTodo} showAdd={showAdd} />
-      <Todos todos={todos} completeTodo={completeTodo} />
+      <Container
+        flexDirection="column"
+        justifyContent="space-between"
+        height="100%"
+      >
+        <Header
+          showAddToggle={showAddToggle}
+          showAdd={showAdd}
+          clearTodos={clearTodos}
+        />
+        <TodoForm addTodo={addTodo} showAdd={showAdd} />
+        <Todos todos={todos} completeTodo={completeTodo} />
+      </Container>
     </Paper>
   );
 };
