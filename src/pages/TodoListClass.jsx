@@ -4,23 +4,32 @@ import Header from "../components/header/HeaderClass";
 import TodoForm from "../components/todoform/TodoFormClass";
 import Todos from "../components/todos/TodosClass";
 
-import Container from "./../layout/Container";
+import Container from "./../layout/ContainerClass";
 
 class TodoList extends React.Component {
   state = {
-    todos: [
-      { text: "Alhamdulillah", isCompleted: false },
-      {
-        text: "hirabbil",
-        isCompleted: false
-      },
-      {
-        text: "aaLaamiin",
-        isCompleted: false
-      }
-    ],
+    todos: [],
     showAdd: false
   };
+
+  componentDidMount() {
+    const todosStateLocalStorage =
+      JSON.parse(localStorage.getItem("todos")) || [];
+
+    const showAddStateLocalStorage =
+      JSON.parse(localStorage.getItem("showAdd")) || false;
+
+    this.setState({
+      todos: todosStateLocalStorage,
+      showAdd: showAddStateLocalStorage
+    });
+  }
+
+  componentDidUpdate() {
+    const { todos, showAdd } = this.state;
+    localStorage.setItem("todos", JSON.stringify(todos));
+    localStorage.setItem("showAdd", JSON.stringify(showAdd));
+  }
 
   addTodo = value => {
     const { todos } = this.state;
